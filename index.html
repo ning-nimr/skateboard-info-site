@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skateboarding Culture Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(0,0,0,0.8);
+            margin-bottom: 30px;
+            border-radius: 15px;
+        }
+        
+        h1 {
+            color: #fff;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .subtitle {
+            color: #f0f0f0;
+            font-size: 1.2rem;
+        }
+        
+        .section {
+            background: rgba(255,255,255,0.95);
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            color: #4a5568;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .timeline {
+            display: grid;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .timeline-item {
+            background: linear-gradient(45deg, #f7fafc, #edf2f7);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-item:hover {
+            background: linear-gradient(45deg, #e2e8f0, #cbd5e0);
+            transform: translateX(10px);
+        }
+        
+        .skateboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 20px 0;
+        }
+        
+        .skateboard-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .skateboard-card:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .tricks-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .trick-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .trick-card:hover {
+            border-color: #667eea;
+            background: #e8f4fd;
+            transform: translateY(-3px);
+        }
+        
+        .links-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .brand-link {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .brand-link:hover {
+            background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .container { padding: 10px; }
+            .section { padding: 20px; }
+            .skateboard-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛹 SKATE CULTURE</h1>
+            <p class="subtitle">From Sidewalk Surfing to Olympic Glory</p>
+        </header>
+
+        <section class="section">
+            <h2>History of Skateboarding</h2>
+            <img src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2020/6/12/ifyx6fmpehhidhhrjsxb/banzai-skateboarding-portugal" alt="Skateboarding history" class="hero-image">
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>1940s-1960s: The Birth</h3>
+                    <p>California surfers attached roller skate wheels to wooden boards, creating "sidewalk surfboards." First commercial boards from Makaha, Hobie, and Bing's featured clay wheels and basic trucks.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>1970s: The Revolution</h3>
+                    <p>Frank Nasworthy introduced polyurethane wheels, dramatically improving performance. The Z-Boys from Dogtown pioneered pool riding, creating the foundation for vert skating culture.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>1980s-1990s: Street Dominance</h3>
+                    <p>Alan "Ollie" Gelfand invented the ollie, revolutionizing skateboarding. Rodney Mullen adapted it for street skating, inventing the kickflip and establishing modern street skateboarding.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>2000s-Present: Global Recognition</h3>
+                    <p>Skateboarding gained mainstream acceptance, culminating in its inclusion in the Olympics at Tokyo 2020. The sport continues evolving with new technology and global participation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Types of Skateboards</h2>
+            <div class="skateboard-grid">
+                <div class="skateboard-card" onclick="showDetails('street')">
+                    <h3>🏙️ Street Boards</h3>
+                    <p>28-33" long, 7.5-8.5" wide. Perfect for tricks, ollies, and urban skating. Hard wheels for technical maneuvers.</p>
+                </div>
+                
+                <div class="skateboard-card" onclick="showDetails('longboard')">
+                    <h3>🏄 Longboards</h3>
+                    <p>33-60" long. Inspired by surfboards, ideal for cruising, commuting, and downhill racing. Smooth, stable ride.</p>
+                </div>
+                
+                <div class="skateboard-card" onclick="showDetails('cruiser')">
+                    <h3>🚀 Cruisers</h3>
+                    <p>28-34" long. Perfect middle ground between street and longboards. Great for campus navigation and casual rides.</p>
+                </div>
+                
+                <div class="skateboard-card" onclick="showDetails('vert')">
+                    <h3>🌊 Vert Boards</h3>
+                    <p>8.25"+ wide. Built for ramps, half-pipes, and aerial maneuvers. Reinforced construction for high-impact landings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Getting Started: Basic Tricks</h2>
+            <img src="https://img.freepik.com/free-photo/full-shot-skater-jumping-with-board-outdoors_23-2149053579.jpg" alt="Skater performing tricks" class="hero-image">
+            
+            <div class="tricks-container">
+                <div class="trick-card">
+                    <h4>🎯 Ollie</h4>
+                    <p>The foundation of all tricks. Pop the tail while sliding your front foot up to level the board in the air.</p>
+                </div>
+                
+                <div class="trick-card">
+                    <h4>🔄 Shuvit</h4>
+                    <p>Spin the board 180° horizontally beneath your feet without flipping. Great for building board control.</p>
+                </div>
+                
+                <div class="trick-card">
+                    <h4>⚖️ Manual</h4>
+                    <p>Balance on back wheels like a wheelie. Develops core stability and precision control.</p>
+                </div>
+                
+                <div class="trick-card">
+                    <h4>↩️ Kickturn</h4>
+                    <p>Lift front wheels and pivot to change direction smoothly. Essential for navigation and flow.</p>
+                </div>
+                
+                <div class="trick-card">
+                    <h4>🌪️ Kickflip</h4>
+                    <p>Advanced trick combining ollie with board rotation. Flick the edge with your front foot.</p>
+                </div>
+                
+                <div class="trick-card">
+                    <h4>🛑 Powerslide</h4>
+                    <p>Turn board 90° and slide on wheels to control speed or stop. Essential safety technique.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Skateboarding Brands & Videos</h2>
+            <div class="links-section">
+                <a href="https://www.santacruzskateboards.com" class="brand-link" target="_blank">Santa Cruz</a>
+                <a href="https://www.thrashermagazine.com" class="brand-link" target="_blank">Thrasher</a>
+                <a href="https://www.vans.com" class="brand-link" target="_blank">Vans</a>
+                <a href="https://www.elementbrand.com" class="brand-link" target="_blank">Element</a>
+                <a href="https://www.youtube.com/user/BericsVideo" class="brand-link" target="_blank">Berrics Videos</a>
+                <a href="https://www.youtube.com/user/thrashermag" class="brand-link" target="_blank">Thrasher Videos</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function showDetails(type) {
+            const details = {
+                street: "Street skateboards are the most versatile option, perfect for learning tricks and skating in urban environments. They feature smaller, harder wheels (99A-101A) for optimal trick performance.",
+                longboard: "Longboards offer the smoothest ride with their larger, softer wheels (70-85A). Perfect for beginners who want to cruise and carve like surfing on pavement.",
+                cruiser: "Cruiser boards combine portability with comfort. They're great for short commutes and offer more maneuverability than longboards while being more comfortable than street boards.",
+                vert: "Vert boards are built for extreme skating on ramps and bowls. They feature wider decks and reinforced construction to handle high-speed aerial maneuvers."
+            };
+            alert(details[type]);
+        }
+
+        // Add smooth scrolling animation
+        document.querySelectorAll('.section').forEach((section, index) => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            
+            setTimeout(() => {
+                section.style.transition = 'all 0.6s ease';
+                section.style.opacity = '1';
+                section.style.transform = 'translateY(0)';
+            }, index * 200);
+        });
+
+        // Add interactive hover effects
+        document.querySelectorAll('.trick-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.background = 'linear-gradient(135deg, #667eea, #764ba2)';
+                this.style.color = 'white';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.background = '#f8f9fa';
+                this.style.color = '#333';
+            });
+        });
+    </script>
+</body>
+</html>
